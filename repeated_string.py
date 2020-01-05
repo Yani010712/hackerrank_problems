@@ -8,6 +8,7 @@ import sys
 
 
 def repeatedString(s, n):
+    # floor division // discards the fractional part
     return s.count("a") * (n // len(s)) + s[:n % len(s)].count("a")
 
 if __name__ == '__main__':
